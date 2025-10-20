@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testable Profile Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <article data-testid="test-profile-card" class="profile-card">
+    <header>
+      <h2 data-testid="test-user-name">Abraham Aigbokhan</h2>
+    </header>
+
+    <figure class="avatar">
+      <img
+        src="https://via.placeholder.com/150"
+        alt="User Avatar"
+        data-testid="test-user-avatar"
+      />
+    </figure>
+
+    <p data-testid="test-user-bio">
+      Passionate technology enthusiast with experience in cloud infrastructure,
+      automation, and continuous learning. Dedicated to building efficient
+      and accessible digital solutions.
+    </p>
+
+    <p class="time">
+      Current time in milliseconds:
+      <span data-testid="test-user-time" id="user-time"></span>
+    </p>
+
+    <nav aria-label="Social Links">
+      <ul data-testid="test-user-social-links" class="social-links">
+        <li><a href="https://twitter.com/" data-testid="test-user-social-twitter" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+        <li><a href="https://linkedin.com/" data-testid="test-user-social-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://github.com/" data-testid="test-user-social-github" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
+    </nav>
+
+    <section aria-labelledby="hobbies-title">
+      <h3 id="hobbies-title">Hobbies</h3>
+      <ul data-testid="test-user-hobbies">
+        <li>Reading Tech Articles</li>
+        <li>Coding Projects</li>
+        <li>Playing Chess</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="dislikes-title">
+      <h3 id="dislikes-title">Dislikes</h3>
+      <ul data-testid="test-user-dislikes">
+        <li>Procrastination</li>
+        <li>Poor Documentation</li>
+        <li>Unclear Code</li>
+      </ul>
+    </section>
+  </article>
+
+  <script src="script.js"></script>
+</body>
+</html>
